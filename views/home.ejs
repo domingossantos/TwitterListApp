@@ -1,0 +1,5 @@
+<% if (!user) { %>
+<p>Você não está autenticado cliente em <a href="/login">Entrar</a>.</p>
+<% } else { %>
+<p>Ola, <%= user.username %>. Acesse seu <a href="/profile">Perfil</a>.</p>
+<% } %>
